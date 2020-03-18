@@ -20,3 +20,10 @@
 * call objects Trainer.StartTraining function
 * bot receives requests from Console and Evaluates them due to its own scenario at Oryzer File
  
+ ### ORYZER
+#### Dialog: Konuşma başlatma kutusu , soru ve cavapların toplandığı yer
+#### Intent: Bir kullanıcı sorgusunu bir yanıta ve isteğe bağlı olarak belirli bir niyetin ifadesi (kullanıcı sorgusu örneği) eşleştiğinde bir eylemle ilişkilendiren bir şeydir
+#### Expressions: Bir bot motorunun benzerlik tespiti için kalıplar bulmasına yardımcı olacak kullanıcı sorgusu örnekleri kümesidir.
+#### Response: Bir kullanıcı sorgusu bir niyetle ilişkilendirilmiş bir ifadeyle eşleştiğinde çağrılan bir eylemin bir parçasıdır.
+#### ContextAdd: yanıt çağrıldığında, ilgili bağlam eklenir.
+#### Context (table-date-con): hiyerarşik bir konuşma akışı oluşturmak için genellikle sohbet oturumu adı verilen bir şeye eklenen bir dize etiketidir. Response Yanıt düğümünün çıkış bağlantı noktasına bağlandı, Intent /Niyet tarafından bir yanıt üretildiğinde, bu düğüm yürütülür ve oturumda bir table item date-con bağlam öğesi eklenir ve sonraki 2 kullanıcı sorgusu için mevcut olur(Lifespan sayısı 2 girildi)
