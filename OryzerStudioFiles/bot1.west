@@ -1,0 +1,1047 @@
+{
+  "GraphVersion": "1.0.2.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "greet_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [
+        {
+          "IntentName": "greet_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "hi there",
+              "ExpressionName": null,
+              "Id": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 5433.7859805589806,
+                "Y": 3166.1913600891867
+              }
+            },
+            {
+              "Value": "Hey can I book a table",
+              "ExpressionName": null,
+              "Id": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 5098.591011694205,
+                "Y": 3193.5316391560032
+              }
+            },
+            {
+              "Value": "I would Iike to book a table please",
+              "ExpressionName": null,
+              "Id": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 5101.837388505799,
+                "Y": 3362.4823637936838
+              }
+            }
+          ],
+          "Response": {
+            "Hint": "Today|Tomorrow",
+            "Type": null,
+            "Format": null,
+            "Text": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+            "Children": [],
+            "Id": "f387d914-b169-4711-91a3-c4adeebde0b6",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5421.8900894280687,
+              "Y": 3560.0749856645671
+            }
+          },
+          "Id": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+          "IsFolded": false,
+          "DisplayName": "Intent (greet_intent)",
+          "Position": {
+            "X": 5685.5966085783048,
+            "Y": 3312.3710702341155
+          }
+        },
+        {
+          "IntentName": "table_date_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "table-date-con",
+              "Id": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 5531.9466003577973,
+                "Y": 3863.9323769145271
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.date",
+              "ExpressionName": null,
+              "Id": "cc113a36-9478-4495-9f5d-80aeff858529",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 5323.0132670244629,
+                "Y": 3925.1323769145274
+              }
+            }
+          ],
+          "Response": {
+            "Hint": "Breakfast|Lunch|Dinner",
+            "Type": null,
+            "Format": null,
+            "Text": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+            "Children": [],
+            "Id": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5485.4132670244644,
+              "Y": 4123.4942816764324
+            }
+          },
+          "Id": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+          "IsFolded": false,
+          "DisplayName": "Intent (table_date_intent)",
+          "Position": {
+            "X": 5881.0132670244648,
+            "Y": 3730.3323769145277
+          }
+        }
+      ],
+      "Id": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+      "IsFolded": false,
+      "DisplayName": "Dialog (greet_dialog)",
+      "Position": {
+        "X": 6130.5357390130876,
+        "Y": 3378.7130992196221
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "greet_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "hi there",
+          "ExpressionName": null,
+          "Id": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 5433.7859805589806,
+            "Y": 3166.1913600891867
+          }
+        },
+        {
+          "Value": "Hey can I book a table",
+          "ExpressionName": null,
+          "Id": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 5098.591011694205,
+            "Y": 3193.5316391560032
+          }
+        },
+        {
+          "Value": "I would Iike to book a table please",
+          "ExpressionName": null,
+          "Id": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 5101.837388505799,
+            "Y": 3362.4823637936838
+          }
+        }
+      ],
+      "Response": {
+        "Hint": "Today|Tomorrow",
+        "Type": null,
+        "Format": null,
+        "Text": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+        "Children": [],
+        "Id": "f387d914-b169-4711-91a3-c4adeebde0b6",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5421.8900894280687,
+          "Y": 3560.0749856645671
+        }
+      },
+      "Id": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "IsFolded": false,
+      "DisplayName": "Intent (greet_intent)",
+      "Position": {
+        "X": 5685.5966085783048,
+        "Y": 3312.3710702341155
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "hi there",
+      "ExpressionName": null,
+      "Id": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 5433.7859805589806,
+        "Y": 3166.1913600891867
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "Hey can I book a table",
+      "ExpressionName": null,
+      "Id": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 5098.591011694205,
+        "Y": 3193.5316391560032
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "I would Iike to book a table please",
+      "ExpressionName": null,
+      "Id": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 5101.837388505799,
+        "Y": 3362.4823637936838
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Hint": "Today|Tomorrow",
+      "Type": null,
+      "Format": null,
+      "Text": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+      "Children": [],
+      "Id": "f387d914-b169-4711-91a3-c4adeebde0b6",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5421.8900894280687,
+        "Y": 3560.0749856645671
+      }
+    },
+    {
+      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
+      "OutputValue": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+      "Id": "17f63940-9408-45fa-b653-7da6a3cae978",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4869.8132670244649,
+        "Y": 3561.7990435811944
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "table-date-con",
+      "Lifespan": 2,
+      "Id": "fa54904b-97ea-45a3-9aea-b39f933fe9a0",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 5715.6799336911317,
+        "Y": 3658.86571024786
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "table_date_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "table-date-con",
+          "Id": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 5531.9466003577973,
+            "Y": 3863.9323769145271
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.date",
+          "ExpressionName": null,
+          "Id": "cc113a36-9478-4495-9f5d-80aeff858529",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 5323.0132670244629,
+            "Y": 3925.1323769145274
+          }
+        }
+      ],
+      "Response": {
+        "Hint": "Breakfast|Lunch|Dinner",
+        "Type": null,
+        "Format": null,
+        "Text": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+        "Children": [],
+        "Id": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5485.4132670244644,
+          "Y": 4123.4942816764324
+        }
+      },
+      "Id": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+      "IsFolded": false,
+      "DisplayName": "Intent (table_date_intent)",
+      "Position": {
+        "X": 5881.0132670244648,
+        "Y": 3730.3323769145277
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "table-date-con",
+      "Id": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 5531.9466003577973,
+        "Y": 3863.9323769145271
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.date",
+      "ExpressionName": null,
+      "Id": "cc113a36-9478-4495-9f5d-80aeff858529",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 5323.0132670244629,
+        "Y": 3925.1323769145274
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Hint": "Breakfast|Lunch|Dinner",
+      "Type": null,
+      "Format": null,
+      "Text": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+      "Children": [],
+      "Id": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5485.4132670244644,
+        "Y": 4123.4942816764324
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "sys.date",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "87bb941a-2090-458d-b4b6-4da9c9346526",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 5822.8047938349118,
+        "Y": 4123.6111743093225
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
+      "VariableName": "table-date",
+      "VariableOrigin": 1,
+      "VariableValue": "Today",
+      "Id": "3eed23ee-f3e2-4992-8c90-f8a4eff354ad",
+      "IsFolded": false,
+      "DisplayName": "Variable Set",
+      "Position": {
+        "X": 6122.8047938349118,
+        "Y": 4231.6111743093225
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "table-time-con",
+      "Lifespan": 2,
+      "Id": "15bebe27-2a18-40a1-82ba-ee838ba9a3b0",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 5828.8188453311559,
+        "Y": 4328.9381724510513
+      }
+    },
+    {
+      "$type": "Syn.Oryzer.Workspace.Nodes.InputOutput.InputTextNode, Syn.Oryzer.Workspace",
+      "OutputValue": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+      "Id": "a60aad74-1806-4263-a87d-dd1d689da7d3",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4924.1077342200451,
+        "Y": 4122.004839117717
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "greet_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [
+            {
+              "IntentName": "greet_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "hi there",
+                  "ExpressionName": null,
+                  "Id": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 5433.7859805589806,
+                    "Y": 3166.1913600891867
+                  }
+                },
+                {
+                  "Value": "Hey can I book a table",
+                  "ExpressionName": null,
+                  "Id": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 5098.591011694205,
+                    "Y": 3193.5316391560032
+                  }
+                },
+                {
+                  "Value": "I would Iike to book a table please",
+                  "ExpressionName": null,
+                  "Id": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 5101.837388505799,
+                    "Y": 3362.4823637936838
+                  }
+                }
+              ],
+              "Response": {
+                "Hint": "Today|Tomorrow",
+                "Type": null,
+                "Format": null,
+                "Text": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+                "Children": [],
+                "Id": "f387d914-b169-4711-91a3-c4adeebde0b6",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5421.8900894280687,
+                  "Y": 3560.0749856645671
+                }
+              },
+              "Id": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+              "IsFolded": false,
+              "DisplayName": "Intent (greet_intent)",
+              "Position": {
+                "X": 5685.5966085783048,
+                "Y": 3312.3710702341155
+              }
+            },
+            {
+              "IntentName": "table_date_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "table-date-con",
+                  "Id": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 5531.9466003577973,
+                    "Y": 3863.9323769145271
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.date",
+                  "ExpressionName": null,
+                  "Id": "cc113a36-9478-4495-9f5d-80aeff858529",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 5323.0132670244629,
+                    "Y": 3925.1323769145274
+                  }
+                }
+              ],
+              "Response": {
+                "Hint": "Breakfast|Lunch|Dinner",
+                "Type": null,
+                "Format": null,
+                "Text": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+                "Children": [],
+                "Id": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5485.4132670244644,
+                  "Y": 4123.4942816764324
+                }
+              },
+              "Id": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+              "IsFolded": false,
+              "DisplayName": "Intent (table_date_intent)",
+              "Position": {
+                "X": 5881.0132670244648,
+                "Y": 3730.3323769145277
+              }
+            }
+          ],
+          "Id": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+          "IsFolded": false,
+          "DisplayName": "Dialog (greet_dialog)",
+          "Position": {
+            "X": 6130.5357390130876,
+            "Y": 3378.7130992196221
+          }
+        }
+      ],
+      "Entities": [
+        {
+          "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryEntityCreatorNode, Syn.Bot",
+          "EntityType": "meal-type",
+          "Entries": [
+            {
+              "EntryValue": "Breakfast",
+              "Synonyms": [],
+              "Id": "4852670b-e2ff-48d2-ac6c-85bc27ee9bd2",
+              "IsFolded": false,
+              "DisplayName": "Entry",
+              "Position": {
+                "X": 6261.2416479999711,
+                "Y": 3655.5424095883204
+              }
+            },
+            {
+              "EntryValue": "Lunch",
+              "Synonyms": [],
+              "Id": "d6e98304-bca4-4a3a-8cbe-d6b9d2b4ffe8",
+              "IsFolded": false,
+              "DisplayName": "Entry",
+              "Position": {
+                "X": 6319.8037395032388,
+                "Y": 3864.9018867125037
+              }
+            },
+            {
+              "EntryValue": "Dinner",
+              "Synonyms": [],
+              "Id": "d88486be-a071-420c-9a26-5ffaaba774e9",
+              "IsFolded": false,
+              "DisplayName": "Entry",
+              "Position": {
+                "X": 6385.4769421176188,
+                "Y": 4069.2417559935493
+              }
+            }
+          ],
+          "Id": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+          "IsFolded": false,
+          "DisplayName": "Entry Recognizer",
+          "Position": {
+            "X": 6651.2184094945615,
+            "Y": 3642.1903680408991
+          }
+        }
+      ],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "779d36b6-9702-41b6-84c4-06445f61fd20",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 6826.5997648437178,
+        "Y": 3369.1545235276535
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryEntityCreatorNode, Syn.Bot",
+      "EntityType": "meal-type",
+      "Entries": [
+        {
+          "EntryValue": "Breakfast",
+          "Synonyms": [],
+          "Id": "4852670b-e2ff-48d2-ac6c-85bc27ee9bd2",
+          "IsFolded": false,
+          "DisplayName": "Entry",
+          "Position": {
+            "X": 6261.2416479999711,
+            "Y": 3655.5424095883204
+          }
+        },
+        {
+          "EntryValue": "Lunch",
+          "Synonyms": [],
+          "Id": "d6e98304-bca4-4a3a-8cbe-d6b9d2b4ffe8",
+          "IsFolded": false,
+          "DisplayName": "Entry",
+          "Position": {
+            "X": 6319.8037395032388,
+            "Y": 3864.9018867125037
+          }
+        },
+        {
+          "EntryValue": "Dinner",
+          "Synonyms": [],
+          "Id": "d88486be-a071-420c-9a26-5ffaaba774e9",
+          "IsFolded": false,
+          "DisplayName": "Entry",
+          "Position": {
+            "X": 6385.4769421176188,
+            "Y": 4069.2417559935493
+          }
+        }
+      ],
+      "Id": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+      "IsFolded": false,
+      "DisplayName": "Entry Recognizer",
+      "Position": {
+        "X": 6651.2184094945615,
+        "Y": 3642.1903680408991
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaPanelNode, Syn.Bot",
+      "OscovaBotNode": {
+        "Dialogs": [
+          {
+            "DialogName": "greet_dialog",
+            "IntentAlias": null,
+            "Domain": null,
+            "Intents": [
+              {
+                "IntentName": "greet_intent",
+                "MinScore": 0.0,
+                "IntentContexts": [],
+                "Prompts": [],
+                "AutoEntity": null,
+                "Fallback": null,
+                "Trait": null,
+                "Action": null,
+                "Expressions": [
+                  {
+                    "Value": "hi there",
+                    "ExpressionName": null,
+                    "Id": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 5433.7859805589806,
+                      "Y": 3166.1913600891867
+                    }
+                  },
+                  {
+                    "Value": "Hey can I book a table",
+                    "ExpressionName": null,
+                    "Id": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 5098.591011694205,
+                      "Y": 3193.5316391560032
+                    }
+                  },
+                  {
+                    "Value": "I would Iike to book a table please",
+                    "ExpressionName": null,
+                    "Id": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 5101.837388505799,
+                      "Y": 3362.4823637936838
+                    }
+                  }
+                ],
+                "Response": {
+                  "Hint": "Today|Tomorrow",
+                  "Type": null,
+                  "Format": null,
+                  "Text": "Hi there! I am here to help you book a table.  \r\nSo let's begin by letting me know for when would you like to book a table?",
+                  "Children": [],
+                  "Id": "f387d914-b169-4711-91a3-c4adeebde0b6",
+                  "IsFolded": false,
+                  "DisplayName": "Response",
+                  "Position": {
+                    "X": 5421.8900894280687,
+                    "Y": 3560.0749856645671
+                  }
+                },
+                "Id": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+                "IsFolded": false,
+                "DisplayName": "Intent (greet_intent)",
+                "Position": {
+                  "X": 5685.5966085783048,
+                  "Y": 3312.3710702341155
+                }
+              },
+              {
+                "IntentName": "table_date_intent",
+                "MinScore": 0.0,
+                "IntentContexts": [
+                  {
+                    "ContextName": "table-date-con",
+                    "Id": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+                    "IsFolded": false,
+                    "DisplayName": "Context",
+                    "Position": {
+                      "X": 5531.9466003577973,
+                      "Y": 3863.9323769145271
+                    }
+                  }
+                ],
+                "Prompts": [],
+                "AutoEntity": null,
+                "Fallback": null,
+                "Trait": null,
+                "Action": null,
+                "Expressions": [
+                  {
+                    "Value": "@sys.date",
+                    "ExpressionName": null,
+                    "Id": "cc113a36-9478-4495-9f5d-80aeff858529",
+                    "IsFolded": false,
+                    "DisplayName": "Expression",
+                    "Position": {
+                      "X": 5323.0132670244629,
+                      "Y": 3925.1323769145274
+                    }
+                  }
+                ],
+                "Response": {
+                  "Hint": "Breakfast|Lunch|Dinner",
+                  "Type": null,
+                  "Format": null,
+                  "Text": "Alright so the table's set for $sys.user.table-date and for which meal would you like to come?",
+                  "Children": [],
+                  "Id": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+                  "IsFolded": false,
+                  "DisplayName": "Response",
+                  "Position": {
+                    "X": 5485.4132670244644,
+                    "Y": 4123.4942816764324
+                  }
+                },
+                "Id": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+                "IsFolded": false,
+                "DisplayName": "Intent (table_date_intent)",
+                "Position": {
+                  "X": 5881.0132670244648,
+                  "Y": 3730.3323769145277
+                }
+              }
+            ],
+            "Id": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+            "IsFolded": false,
+            "DisplayName": "Dialog (greet_dialog)",
+            "Position": {
+              "X": 6130.5357390130876,
+              "Y": 3378.7130992196221
+            }
+          }
+        ],
+        "Entities": [
+          {
+            "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryEntityCreatorNode, Syn.Bot",
+            "EntityType": "meal-type",
+            "Entries": [
+              {
+                "EntryValue": "Breakfast",
+                "Synonyms": [],
+                "Id": "4852670b-e2ff-48d2-ac6c-85bc27ee9bd2",
+                "IsFolded": false,
+                "DisplayName": "Entry",
+                "Position": {
+                  "X": 6261.2416479999711,
+                  "Y": 3655.5424095883204
+                }
+              },
+              {
+                "EntryValue": "Lunch",
+                "Synonyms": [],
+                "Id": "d6e98304-bca4-4a3a-8cbe-d6b9d2b4ffe8",
+                "IsFolded": false,
+                "DisplayName": "Entry",
+                "Position": {
+                  "X": 6319.8037395032388,
+                  "Y": 3864.9018867125037
+                }
+              },
+              {
+                "EntryValue": "Dinner",
+                "Synonyms": [],
+                "Id": "d88486be-a071-420c-9a26-5ffaaba774e9",
+                "IsFolded": false,
+                "DisplayName": "Entry",
+                "Position": {
+                  "X": 6385.4769421176188,
+                  "Y": 4069.2417559935493
+                }
+              }
+            ],
+            "Id": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+            "IsFolded": false,
+            "DisplayName": "Entry Recognizer",
+            "Position": {
+              "X": 6651.2184094945615,
+              "Y": 3642.1903680408991
+            }
+          }
+        ],
+        "Traits": [],
+        "Scripts": [],
+        "Filters": [],
+        "BotSettings": null,
+        "UserSettings": null,
+        "SimlNodes": [],
+        "Id": "779d36b6-9702-41b6-84c4-06445f61fd20",
+        "IsFolded": false,
+        "DisplayName": "Oscova Bot",
+        "Position": {
+          "X": 6826.5997648437178,
+          "Y": 3369.1545235276535
+        }
+      },
+      "Id": "0ddbeabb-57b4-438e-a3bf-7d686e6c24bb",
+      "IsFolded": false,
+      "DisplayName": "Oscova Test Panel",
+      "Position": {
+        "X": 7549.7756850363539,
+        "Y": 3246.6565531114165
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
+      "EntryValue": "Breakfast",
+      "Synonyms": [],
+      "Id": "4852670b-e2ff-48d2-ac6c-85bc27ee9bd2",
+      "IsFolded": false,
+      "DisplayName": "Entry",
+      "Position": {
+        "X": 6261.2416479999711,
+        "Y": 3655.5424095883204
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
+      "EntryValue": "Lunch",
+      "Synonyms": [],
+      "Id": "d6e98304-bca4-4a3a-8cbe-d6b9d2b4ffe8",
+      "IsFolded": false,
+      "DisplayName": "Entry",
+      "Position": {
+        "X": 6319.8037395032388,
+        "Y": 3864.9018867125037
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntryNode, Syn.Bot",
+      "EntryValue": "Dinner",
+      "Synonyms": [],
+      "Id": "d88486be-a071-420c-9a26-5ffaaba774e9",
+      "IsFolded": false,
+      "DisplayName": "Entry",
+      "Position": {
+        "X": 6385.4769421176188,
+        "Y": 4069.2417559935493
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "FromPortName": "Output",
+      "ToNodeId": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+      "ToPortName": "Intents:[0]"
+    },
+    {
+      "FromNodeId": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+      "FromPortName": "Output",
+      "ToNodeId": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+      "ToPortName": "Intents:[1]"
+    },
+    {
+      "FromNodeId": "0c398b44-c79b-4d13-8c32-2b7a5d7b11f2",
+      "FromPortName": "Output",
+      "ToNodeId": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "ToPortName": "Expressions:[0]"
+    },
+    {
+      "FromNodeId": "1794b6ec-4c4a-46a5-872a-d136555cd3b4",
+      "FromPortName": "Output",
+      "ToNodeId": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "ToPortName": "Expressions:[1]"
+    },
+    {
+      "FromNodeId": "5acf27f9-db42-4b5e-8c23-239bfbc25666",
+      "FromPortName": "Output",
+      "ToNodeId": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "ToPortName": "Expressions:[2]"
+    },
+    {
+      "FromNodeId": "f387d914-b169-4711-91a3-c4adeebde0b6",
+      "FromPortName": "Output",
+      "ToNodeId": "e86c6379-47a7-490a-b81e-4f377b45b7c2",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "17f63940-9408-45fa-b653-7da6a3cae978",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "f387d914-b169-4711-91a3-c4adeebde0b6",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "f387d914-b169-4711-91a3-c4adeebde0b6",
+      "FromPortName": "GeneratingResponse",
+      "ToNodeId": "fa54904b-97ea-45a3-9aea-b39f933fe9a0",
+      "ToPortName": "OnGeneratingResponse"
+    },
+    {
+      "FromNodeId": "57d8f6bd-42d1-4dbe-8568-700625563fbd",
+      "FromPortName": "Output",
+      "ToNodeId": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+      "ToPortName": "IntentContexts:[0]"
+    },
+    {
+      "FromNodeId": "cc113a36-9478-4495-9f5d-80aeff858529",
+      "FromPortName": "Output",
+      "ToNodeId": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+      "ToPortName": "Expressions:[0]"
+    },
+    {
+      "FromNodeId": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+      "FromPortName": "Output",
+      "ToNodeId": "f70489ac-c5b9-4735-bcb1-81645414aaef",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "a60aad74-1806-4263-a87d-dd1d689da7d3",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+      "FromPortName": "GeneratingResponse",
+      "ToNodeId": "87bb941a-2090-458d-b4b6-4da9c9346526",
+      "ToPortName": "OnGeneratingResponse"
+    },
+    {
+      "FromNodeId": "87bb941a-2090-458d-b4b6-4da9c9346526",
+      "FromPortName": "Output",
+      "ToNodeId": "3eed23ee-f3e2-4992-8c90-f8a4eff354ad",
+      "ToPortName": "VariableValue"
+    },
+    {
+      "FromNodeId": "1510926f-9cce-41b0-9ee8-fcd1615635c9",
+      "FromPortName": "GeneratingResponse",
+      "ToNodeId": "15bebe27-2a18-40a1-82ba-ee838ba9a3b0",
+      "ToPortName": "OnGeneratingResponse"
+    },
+    {
+      "FromNodeId": "230ccf76-9ccc-48b4-8edd-2de99beeaf8b",
+      "FromPortName": "Output",
+      "ToNodeId": "779d36b6-9702-41b6-84c4-06445f61fd20",
+      "ToPortName": "Dialogs:[0]"
+    },
+    {
+      "FromNodeId": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+      "FromPortName": "Output",
+      "ToNodeId": "779d36b6-9702-41b6-84c4-06445f61fd20",
+      "ToPortName": "Entities:[0]"
+    },
+    {
+      "FromNodeId": "4852670b-e2ff-48d2-ac6c-85bc27ee9bd2",
+      "FromPortName": "Output",
+      "ToNodeId": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+      "ToPortName": "Entries:[0]"
+    },
+    {
+      "FromNodeId": "d6e98304-bca4-4a3a-8cbe-d6b9d2b4ffe8",
+      "FromPortName": "Output",
+      "ToNodeId": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+      "ToPortName": "Entries:[1]"
+    },
+    {
+      "FromNodeId": "d88486be-a071-420c-9a26-5ffaaba774e9",
+      "FromPortName": "Output",
+      "ToNodeId": "5142ac88-2ae7-42e7-bcb6-3bb4f87a26d8",
+      "ToPortName": "Entries:[2]"
+    },
+    {
+      "FromNodeId": "779d36b6-9702-41b6-84c4-06445f61fd20",
+      "FromPortName": "Output",
+      "ToNodeId": "0ddbeabb-57b4-438e-a3bf-7d686e6c24bb",
+      "ToPortName": "OscovaBotNode"
+    }
+  ]
+}
